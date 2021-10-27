@@ -1,0 +1,12 @@
+[user]
+    name = Joonkyo Kim
+    email = rootwarp@gmail.com
+
+[alias]
+    glog = log --graph --pretty=format:'%C(red)%h %C(blue)%d %C(reset)%s %C(yellow)by %an<%ae> %ar' --all
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
