@@ -1,9 +1,16 @@
 [user]
     name = Joonkyo Kim
-    email = rootwarp@gmail.com
+	email = rootwarp@gmail.com
+    signingkey = 8770D05F4C18637A
 
 [alias]
     glog = log --graph --pretty=format:'%C(red)%h %C(blue)%d %C(reset)%s %C(yellow)by %an<%ae> %ar' --all
+
+[commit]
+    gpgsign = true
+
+[gpg]
+    program = gpg
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
