@@ -1,5 +1,5 @@
 set nocompatible
-filetype indent plugin on
+filetype plugin indent on
 syntax enable
 set background=dark
 
@@ -59,6 +59,11 @@ au Filetype proto
             \ set softtabstop=4 |
             \ set shiftwidth=4
 
+au Filetype rs
+            \ set tabstop=4 |
+            \ set softtabstop=4 |
+            \ set shiftwidth=4
+
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
@@ -69,6 +74,11 @@ Plugin 'nvie/vim-flake8'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'bling/vim-airline'
 Plugin 'fatih/vim-go'
+Plugin 'rust-lang/rust.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()
 
 " Syntastic
